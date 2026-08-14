@@ -175,6 +175,11 @@ transform: translateY(-5px);
 box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
+
+/* =========================
+Pizza Image
+========================= */
+
 .pizza-image {
 height: 180px;
 
@@ -182,10 +187,34 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-font-size: 80px;
-
 background-color: #f8e4d5;
+
+overflow: hidden;
 }
+
+/* รูปพิซซ่า */
+.pizza-image img {
+width: 150px;
+height: 150px;
+
+object-fit: contain;
+
+display: block;
+
+border-radius: 12px;
+
+transition: 0.3s;
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์วาง */
+.pizza-card:hover .pizza-image img {
+transform: scale(1.05);
+}
+
+
+/* =========================
+Pizza Info
+========================= */
 
 .pizza-info {
 padding: 22px;
@@ -298,6 +327,7 @@ padding: 18px 5%;
 .menu-section {
 padding: 70px 5%;
 }
+
 }
 
 
@@ -349,6 +379,11 @@ gap: 20px;
 height: 160px;
 }
 
+.pizza-image img {
+width: 130px;
+height: 130px;
+}
+
 .order-section {
 padding: 70px 20px;
 }
@@ -361,4 +396,5 @@ max-width: 300px;
 footer {
 font-size: 0.75rem;
 }
+
 }
