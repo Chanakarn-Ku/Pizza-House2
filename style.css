@@ -193,17 +193,21 @@ overflow: hidden;
 }
 
 /* รูปพิซซ่า */
+.pizza-image {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8e4d5;
+    overflow: hidden;
+}
+
 .pizza-image img {
-width: 150px;
-height: 150px;
-
-object-fit: contain;
-
-display: block;
-
-border-radius: 12px;
-
-transition: 0.3s;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
 }
 
 /* เอฟเฟกต์ตอนเอาเมาส์วาง */
